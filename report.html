@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit Report</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>Submit Anonymous Report</h2>
+
+<select id="category">
+<option>Staff Misconduct</option>
+<option>Moderator Abuse</option>
+<option>Harassment or Bullying</option>
+<option>Discrimination or Hate Speech</option>
+<option>Threats or Safety Concerns</option>
+<option>Exploitation / Scamming</option>
+<option>Community Rule Violation</option>
+<option>Appeal of Staff Action</option>
+<option>Other</option>
+</select>
+
+<textarea id="desc" placeholder="Describe what happened"></textarea>
+
+<input id="date" type="date"/>
+
+<input id="e1" placeholder="Evidence 1 URL">
+<input id="e2" placeholder="Evidence 2 URL">
+<input id="e3" placeholder="Evidence 3 URL">
+
+<button onclick="submitReport()">Submit</button>
+
+<script src="report.js"></script>
+</div>
+</body>
+</html>

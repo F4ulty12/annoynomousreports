@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +7,8 @@
 <body>
 <div class="container">
 <h2>Submit Anonymous Report</h2>
-
 <select id="category">
+<option value="">Select a category...</option>
 <option>Staff Misconduct</option>
 <option>Moderator Abuse</option>
 <option>Harassment or Bullying</option>
@@ -20,17 +19,14 @@
 <option>Appeal of Staff Action</option>
 <option>Other</option>
 </select>
-
-<textarea id="desc" placeholder="Describe what happened"></textarea>
-
+<textarea id="desc" placeholder="Describe what happened" rows="6"></textarea>
 <input id="date" type="date"/>
-
 <input id="e1" placeholder="Evidence 1 URL">
 <input id="e2" placeholder="Evidence 2 URL">
 <input id="e3" placeholder="Evidence 3 URL">
-
 <button onclick="submitReport()">Submit</button>
-
+<div id="formStatus"></div>
+<script src="config.js"></script>
 <script src="report.js"></script>
 </div>
 </body>
